@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Project</title>
+</head>
+<body>
+ <div class="wrapper"id="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>M.Y</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="#wrapper" class="link active">Home</a></li>
+                <li><a href="#blog" class="link">Blog</a></li>
+                <li><a href="#services" class="link">Services</a></li>
+                <li><a href="#about" class="link">About</a></li>
+                <LI><a href="#contact" class="link">Contect</a></LI>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+            <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+
+<!----------------------------- Form box ----------------------------------->    
+    <div class="form-box">
+        
+        <!------------------- login form -------------------------->
+
+        <div class="login-container" id="login">
+            <div class="top">
+                <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+                <header>Login</header>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Username or Email">
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Sign In">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="login-check">
+                    <label for="login-check"> Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Forgot password?</a></label>
+                </div>
+            </div>
+        </div>
+
+        <!------------------- registration form -------------------------->
+        <div class="register-container" id="register">
+            <div class="top">
+                <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+                <header>Sign Up</header>
+            </div>
+            <div class="two-forms">
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Firstname">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Lastname">
+                    <i class="bx bx-user"></i>
+                </div>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Email">
+                <i class="bx bx-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Register">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="register-check">
+                    <label for="register-check"> Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Terms & conditions</a></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>   
+<!----------------------------- Blog ----------------------------------->    
+<section class="blog" id="blog">
+    <h1>Our Blog</h1>
+    <p>Read our latest articles on technology, design, and innovation.</p>
+    <div class="blog-posts">
+        <div class="blog-post">
+            <h3>5 Web Design Trends in 2025</h3>
+            <p>Discover the top web design trends shaping the future of digital experiences.</p>
+        </div>
+        <div class="blog-post">
+            <h3>Why UX Matters More Than Ever</h3>
+            <p>User Experience is the foundation of all great websites. Here's why you can't ignore it.</p>
+        </div>
+        <div class="blog-post">
+            <h3>Why UX Matters More Than Ever</h3>
+            <p>User Experience is the foundation of all great websites. Here's why you can't ignore it.</p>
+        </div>
+        <div class="blog-post">
+            <h3>Why UX Matters More Than Ever</h3>
+            <p>User Experience is the foundation of all great websites. Here's why you can't ignore it.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services" id="services">
+    <h1>Our Services</h1>
+    <p>We offer a full range of digital services for businesses and individuals.</p>
+    <div class="service-items">
+        <div class="service">
+            <i class='bx bx-code-alt'></i>
+            <h3>Web Development</h3>
+            <p>From landing pages to full-stack applications using the latest tech.</p>
+        </div>
+        <div class="service">
+            <i class='bx bx-paint'></i>
+            <h3>UI/UX Design</h3>
+            <p>Crafting smooth, user-first designs that elevate your brand.</p>
+        </div>
+        <div class="service">
+            <i class='bx bx-mobile'></i>
+            <h3>Mobile Apps</h3>
+            <p>iOS and Android apps tailored to your business goals.</p>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+    <h1>About Us</h1>
+    <p>We are a passionate team of developers and creatives committed to delivering top-quality digital products. Our mission is to help people and businesses thrive in the digital era.</p>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <h1>Contact Us</h1>
+    <p>We're here to help. Reach out anytime.</p>
+    <p>Email: <a href="mailto:info@example.com">info@example.com</a> | Phone: +123 456 7890</p>
+    <p>Follow us:
+        <a href="#" style="margin: 0 10px;"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="#" style="margin: 0 10px;"><i class='bx bxl-twitter'></i></a>
+        <a href="#" style="margin: 0 10px;"><i class='bx bxl-instagram'></i></a>
+    </p>
+</section>
+
+
+
+<script>
+   
+   function myMenuFunction() {
+    var i = document.getElementById("navMenu");
+
+    if(i.className === "nav-menu") {
+        i.className += " responsive";
+    } else {
+        i.className = "nav-menu";
+    }
+   }
+ 
+</script>
+
+<script>
+
+    var a = document.getElementById("loginBtn");
+    var b = document.getElementById("registerBtn");
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+
+    function login() {
+        x.style.left = "4px";
+        y.style.right = "-520px";
+        a.className += " white-btn";
+        b.className = "btn";
+        x.style.opacity = 1;
+        y.style.opacity = 0;
+    }
+
+    function register() {
+        x.style.left = "-510px";
+        y.style.right = "5px";
+        a.className = "btn";
+        b.className += " white-btn";
+        x.style.opacity = 0;
+        y.style.opacity = 1;
+    }
+
+</script>
+</body>
+</html>
